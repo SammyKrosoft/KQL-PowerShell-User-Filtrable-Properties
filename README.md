@@ -1,4 +1,6 @@
-# KQL filtrable properties
+# KQL recipients filtrable properties
+
+Source: https://learn.microsoft.com/en-us/powershell/module/exchange/new-managementscope?view=exchange-ps
 
 |Property name|LDAP display name|Value|Comments|
 |---|---|---|---|
