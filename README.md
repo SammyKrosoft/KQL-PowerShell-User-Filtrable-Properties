@@ -1,224 +1,259 @@
 # KQL filtrable properties
 
-| **Property name** | **LDAP display name** | **Description** | **Value** |
-| --- | --- | --- | --- |
-| _AcceptMessagesOnlyFrom_ | _authOrig_ | _Extended attribute_ | _Extended attribute_ |
-| _AcceptMessagesOnlyFromDLMembers_ | _dLMemSubmitPerms_ | _Extended attribute_ | _Extended attribute_ |
-| _ActiveSyncAllowedDeviceIDs_ | _msExchMobileAllowedDeviceIds_ | _Extended attribute_ | _Extended attribute_ |
-| _ActiveSyncDebugLogging_ | _msExchMobileDebugLogging_ | _Extended attribute_ | _Extended attribute_ |
-| _ActiveSyncEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _ActiveSyncMailboxPolicy_ | _msExchMobileMailboxPolicyLink_ | This property contains the name of the Exchange ActiveSync mailbox policy for the mailbox. | DN |
-| _AddressListMembership_ | _showInAddressBook_ | _Extended attribute_ | _Extended attribute_ |
-| _Alias_ | _mailNickname_ | This property contains the alias (the generic name used to identify a mail account) of the recipient. | String / Wildcard character accepted |
-| _AllowUMCallsFromNonUsers_ | _msExchUMListInDirectorySearch_ | _Extended attribute_ | _Extended attribute_ |
-| _AssistantName_ | _msExchAssistantName_ | This property contains the assistant name of the recipient. | String / Wildcard character accepted |
-| _C_ | _C_ | This property contains the two-letter country/region designation from International Organization for Standardization (ISO) 3166. | ISO 3166 / |
-| _CallAnsweringAudioCodec_ | _msExchUMAudioCodec_ | _Extended attribute_ | _Extended attribute_ |
-| _Certificate_ | _userCertificate_ | _Extended attribute_ | _Extended attribute_ |
-| _City_ | _l_ | This property contains the city name of the recipient. | String / Wildcard character accepted |
-| _Co_ | _Co_ | This property contains the country/region name in which the recipient resides. | Country/Region / You can locate valid Co values on the **Address and Phone** tab in the recipient's properties. |
-| _CommonName_ | _cn_ | _Extended attribute_ | _Extended attribute_ |
-| _Company_ | _company_ | This property contains the company of the recipient. | String / Wildcard character accepted |
-| _CountryCode_ | _CountryCode_ | This property contains the numeric country/region designation from ISO 3166. | ISO 3166 / |
-| _CountryOrRegion_ | Not applicable | This property contains the country or region in which the recipient resides. | Country/Region / You can locate valid CountryOrRegion values on the **Address and Phone** tab in the recipient's properties. |
-| _CustomAttribute1_ | _extensionAttribute1_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _CustomAttribute10_ | _extensionAttribute10_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _CustomAttribute11_ | _extensionAttribute11_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _CustomAttribute12_ | _extensionAttribute12_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _CustomAttribute13_ | _extensionAttribute13_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _CustomAttribute14_ | _extensionAttribute14_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _CustomAttribute15_ | _extensionAttribute15_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _CustomAttribute2_ | _extensionAttribute2_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _CustomAttribute3_ | _extensionAttribute3_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _CustomAttribute4_ | _extensionAttribute4_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _CustomAttribute5_ | _extensionAttribute5_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _CustomAttribute6_ | _extensionAttribute6_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _CustomAttribute7_ | _extensionAttribute7_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _CustomAttribute8_ | _extensionAttribute8_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _CustomAttribute9_ | _extensionAttribute9_ | This property contains a custom attribute that you can add to a recipient. | String / Wildcard character accepted |
-| _Database_ | _homeMDB_ | This property contains the mailbox database. | Mailbox database / Identity / DN |
-| _DeletedItemFlags_ | _deletedItemFlags_ | _Extended attribute_ | _Extended attribute_ |
-| _DeliverToMailboxAndForward_ | _deliverAndRedirect_ | _Extended attribute_ | _Extended attribute_ |
-| _Department_ | _department_ | This property contains the department of the recipient. | String / Wildcard character accepted |
-| _Description_ | _description_ | _Extended attribute_ | _Extended attribute_ |
-| _DisplayName_ | _displayName_ | This property contains the ambiguous name resolution (ANR) search for the display name of the recipient. | String / Wildcard character accepted |
-| _DistinguishedName_ | _distinguishedName_ | _Extended attribute_ | _Extended attribute_ |
-| _ElcExpirationSuspensionEndDate_ | _msExchELCExpirySuspensionEnd_ | _Extended attribute_ | _Extended attribute_ |
-| _ElcExpirationSuspensionStartDate_ | _msExchELCExpirySuspensionStart_ | _Extended attribute_ | _Extended attribute_ |
-| _ElcMailboxFlags_ | _msExchELCMailboxFlags_ | _Extended attribute_ | _Extended attribute_ |
-| _EmailAddresses_ | _proxyAddresses_ | This property contains the e-mail addresses of this recipient. All Exchange 2007 e-mail address types are valid. Separate multiple values by using commas. | E-mail address / Wildcard character accepted |
-| _EmailAddressPolicyEnabled_ | Not applicable | This property contains the control for applying e-mail address policies to this recipient. | Boolean / $true or $false |
-| _ExchangeGuid_ | _msExchMailboxGuid_ | _Extended attribute_ | _Extended attribute_ |
-| _ExchangeSecurityDescriptor_ | _msExchMailboxSecurityDescriptor_ | _Extended attribute_ | _Extended attribute_ |
-| _ExchangeVersion_ | _msExchVersion_ | _Extended attribute_ | _Extended attribute_ |
-| _ExpansionServer_ | _msExchExpansionServerName_ | _Extended attribute_ | _Extended attribute_ |
-| _ExternalEmailAddress_ | _targetAddress_ | This property contains the external e-mail address. E-mail messages sent to the mail-enabled user are sent to this external address. | E-mail address / Wildcard character accepted |
-| _ExternalOofOptions_ | _msExchExternalOOFOptions_ | This property contains the option for sending an out-of-office message to external senders. | InternalOnly / External |
-| _ExternalOofOptions_ | _msExchExternalOOFOptions_ | _Extended attribute_ | _Extended attribute_ |
-| _Fax_ | _facsimileTelephoneNumber_ | _Extended attribute_ | _Extended attribute_ |
-| _FirstName_ | _givenName_ | This property contains the ANR search for the first name of the recipient. | String / Wildcard character accepted |
-| _ForwardingAddress_ | _altRecipient_ | _Extended attribute_ | _Extended attribute_ |
-| _GrantSendOnBehalfTo_ | _publicDelegates_ | _Extended attribute_ | _Extended attribute_ |
-| _GroupType_ | _groupType_ | _Extended attribute_ | _Extended attribute_ |
-| _Guid_ | _objectGuid_ | _Extended attribute_ | _Extended attribute_ |
-| _HasActiveSyncDevicePartnership_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _HiddenFromAddressListsEnabled_ | _msExchHideFromAddressLists_ | This property specifies whether the recipient is visible in the address list. | Boolean / $true or $false |
-| _HiddenGroupMembershipEnabled_ | _hideDLMembership_ | _Extended attribute_ | _Extended attribute_ |
-| _HomeMTA_ | _homeMTA_ | _Extended attribute_ | _Extended attribute_ |
-| _HomePhone_ | _homePhone_ | _Extended attribute_ | _Extended attribute_ |
-| _Id_ | _distinguishedName_ | _Extended attribute_ | _Extended attribute_ |
-| _ImapEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _IncludedRecipients_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _Initials_ | _initials_ | _Extended attribute_ | _Extended attribute_ |
-| _InternetEncoding_ | _internetEncoding_ | _Extended attribute_ | _Extended attribute_ |
-| _IsLinked_ | Not applicable | This property specifies whether a folder is linked to a master folder. | Boolean / $true or $false |
-| _IsMailboxEnabled_ | Not applicable | This property specifies whether a mailbox is mailbox-enabled. | Boolean / $true or $false |
-| _IsResource_ | Not applicable | This property specifies whether a mailbox is a resource mailbox. | Boolean / $true or $false |
-| _IsShared_ | Not applicable | This property specifies whether a resource mailbox is shared. | Boolean / $true or $false |
-| _IssueWarningQuota_ | _mDBStorageQuota_ | This property contains the mailbox size at which a warning message is sent to the user. | Unlimited or integer |
-| _LanguagesRaw_ | _msExchUserCulture_ | This property contains the language preference for this mailbox. | [ISO 639-ISO 3166 / For example, United States English is represented as en-us. / To learn more about culture codes and for a full list of acceptable values, see CultureInfo Class in the MSDN Library.](http://go.microsoft.com/fwlink/?LinkID=67222) |
-| _LastName_ | _sn_ | This property contains the ANR search for the last name of the recipient. | String / Wildcard character accepted |
-| _LdapRecipientFilter_ | _msExchDynamicDLFilter_ | _Extended attribute_ | _Extended attribute_ |
-| _LegacyExchangeDN_ | _legacyExchangeDN_ | _Extended attribute_ | _Extended attribute_ |
-| _LinkedMasterAccount_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _LocaleID_ | _localeID_ | _Extended attribute_ | _Extended attribute_ |
-| _MailboxFolderSet_ | _msExchMailboxFolderSet_ | _Extended attribute_ | _Extended attribute_ |
-| _ManagedBy_ | _managedBy_ | _Extended attribute_ | _Extended attribute_ |
-| _ManagedFolderMailboxPolicy_ | _msExchMailboxTemplateLink_ | This property contains the managed folder mailbox policy that controls messaging records management (MRM). | Name / GUID / DN |
-| _Manager_ | _manager_ | This property contains the manager of the recipient. | String / Wildcard character accepted |
-| _MAPIEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _MapiRecipient_ | _mAPIRecipient_ | _Extended attribute_ | _Extended attribute_ |
-| _MasterAccountSid_ | _msExchMasterAccountSid_ | _Extended attribute_ | _Extended attribute_ |
-| _MaxBlockedSenders_ | _msExchMaxBlockedSenders_ | _Extended attribute_ | _Extended attribute_ |
-| _MaxReceiveSize_ | _delivContLength_ | This property contains the maximum size of messages that this recipient can receive. | Unlimited or integer |
-| _MaxSafeSenders_ | _msExchMaxSafeSenders_ | _Extended attribute_ | _Extended attribute_ |
-| _MaxSendSize_ | _submissionContLength_ | This property contains the maximum size of messages that this recipient can send. | Unlimited or integer |
-| _MemberOfGroup_ | _memberOf_ | _Extended attribute_ | _Extended attribute_ |
-| _Members_ | _member_ | _Extended attribute_ | _Extended attribute_ |
-| _MessageHygieneFlags_ | _msExchMessageHygieneFlags_ | _Extended attribute_ | _Extended attribute_ |
-| _MobileAdminExtendedSettings_ | _msExchOmaAdminExtendedSettings_ | _Extended attribute_ | _Extended attribute_ |
-| _MobileFeaturesEnabled_ | _msExchOmaAdminWirelessEnable_ | This property specifies whether a mailbox has mobile features enabled. | Boolean / $true or $false |
-| _MobileMailboxFlags_ | _msExchMobileMailboxFlags_ | _Extended attribute_ | _Extended attribute_ |
-| _MobilePhone_ | _mobile_ | _Extended attribute_ | _Extended attribute_ |
-| _msRTCSIP-Line_ | _msRTCSIP-Line_ | _Extended attribute_ | _Extended attribute_ |
-| _Name_ | _name_ | This property contains the name of the recipient. | String |
-| _Name_ | _LDAP Display Name_ | _Extended attribute_ | _Extended attribute_ |
-| _Notes_ | _info_ | _Extended attribute_ | _Extended attribute_ |
-| _NTSecurityDescriptor_ | _ntSecurityDescriptor_ | _Extended attribute_ | _Extended attribute_ |
-| _ObjectCategory_ | _objectCategory_ | _Extended attribute_ | _Extended attribute_ |
-| _ObjectClass_ | _objectClass_ | _Extended attribute_ | _Extended attribute_ |
-| _ObjectState_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _Office_ | _physicalDeliveryOfficeName_ | This property contains the office of the recipient. | String |
-| _OfflineAddressBook_ | _msExchUseOAB_ | This property contains the offline address book (OAB) that is associated with this recipient. | Name / GUID / DN |
-| _OperatorNumber_ | _msExchUMOperatorNumber_ | _Extended attribute_ | _Extended attribute_ |
-| _OriginalId_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OriginalPrimarySmtpAddress_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OriginalWindowsEmailAddress_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OtherFax_ | _otherFacsimileTelephoneNumber_ | _Extended attribute_ | _Extended attribute_ |
-| _OtherHomePhone_ | _otherHomePhone_ | _Extended attribute_ | _Extended attribute_ |
-| _OtherTelephone_ | _otherTelephone_ | _Extended attribute_ | _Extended attribute_ |
-| _OWAActiveSyncIntegrationEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWAAllAddressListsEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWACalendarEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWAChangePasswordEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWAContactsEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWAEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWAJournalEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWANotesEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWAPremiumClientEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWAPublicFoldersEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWARecoverDeletedItemsEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWARemindersAndNotificationsEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWARulesEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWASearchFoldersEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWASignaturesEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWASMimeEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWASpellCheckerEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWATasksEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWAThemeSelectionEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWAUMIntegrationEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWAUNCAccessonPrivateComputersEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWAUNCAccessonPublicComputersEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWAWSSAccessOnPrivateComputersEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _OWAWSSAccessOnPublicComputersEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _Pager_ | _pager_ | _Extended attribute_ | _Extended attribute_ |
-| _Phone_ | _telephoneNumber_ | _Extended attribute_ | _Extended attribute_ |
-| _PhoneticCompany_ | _msDS-PhoneticCompanyName_ | _Extended attribute_ | _Extended attribute_ |
-| _PhoneticDepartment_ | _msDS-PhoneticDepartment_ | _Extended attribute_ | _Extended attribute_ |
-| _PhoneticDisplayName_ | _msDS-PhoneticDisplayName_ | _Extended attribute_ | _Extended attribute_ |
-| _PhoneticFirstName_ | _msDS-PhoneticFirstName_ | _Extended attribute_ | _Extended attribute_ |
-| _PhoneticLastName_ | _msDS-PhoneticLastName_ | _Extended attribute_ | _Extended attribute_ |
-| _PoliciesExcluded_ | _msExchPoliciesExcluded_ | _Extended attribute_ | _Extended attribute_ |
-| _PoliciesIncluded_ | _msExchPoliciesIncluded_ | _Extended attribute_ | _Extended attribute_ |
-| _PopEnabled_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _PostalCode_ | _postalCode_ | This property contains the postal code of the recipient. | String |
-| _PostOfficeBox_ | _postOfficeBox_ | _Extended attribute_ | _Extended attribute_ |
-| _PrimaryGroupId_ | _primaryGroupId_ | _Extended attribute_ | _Extended attribute_ |
-| _PrimarySmtpAddress_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _ProhibitSendQuota_ | _mDBOverQuotaLimit_ | This property contains the mailbox size at which the user associated with this mailbox can no longer send messages. | Unlimited or integer |
-| _ProhibitSendReceiveQuota_ | _mDBOverHardQuotaLimit_ | This property contains the mailbox size at which the user associated with this mailbox can no longer send or receive messages | Unlimited or integer |
-| _ProtocolSettings_ | _protocolSettings_ | _Extended attribute_ | _Extended attribute_ |
-| _PublicFolderContacts_ | _pFContacts_ | _Extended attribute_ | _Extended attribute_ |
-| _PublicFolderRootUrl_ | _msExchPfRootUrl_ | _Extended attribute_ | _Extended attribute_ |
-| _PublicFolderType_ | _msExchPFTreeType_ | _Extended attribute_ | _Extended attribute_ |
-| _PurportedSearchUI_ | _msExchPurportedSearchUI_ | _Extended attribute_ | _Extended attribute_ |
-| _QueryBaseDN_ | _msExchQueryBaseDN_ | _Extended attribute_ | _Extended attribute_ |
-| _RawCanonicalName_ | _canonicalName_ | _Extended attribute_ | _Extended attribute_ |
-| _RawExternalEmailAddress_ | _targetAddress_ | _Extended attribute_ | _Extended attribute_ |
-| _RawName_ | _name_ | _Extended attribute_ | _Extended attribute_ |
-| _RecipientContainer_ | _msExchDynamicDLBaseDN_ | _Extended attribute_ | _Extended attribute_ |
-| _RecipientDisplayType_ | _msExchRecipientDisplayType_ | _Extended attribute_ | _Extended attribute_ |
-| _RecipientFilter_ | _msExchQueryFilter_ | _Extended attribute_ | _Extended attribute_ |
-| _RecipientLimits_ | _msExchRecipLimit_ | This property contains the maximum number of recipients per message to which this mailbox can send. | Unlimited or integer |
-| _RecipientType_ | Not applicable | This property specifies the recipient type. | UserMailbox / MailUser / MailContact / MailUniversalDistributionGroup / MailUniversalSecurityGroup / MailNonUniversalGroup / DynamicDistributionGroup / PublicFolder |
-| _RecipientTypeDetails_ | Not applicable | This property specifies the recipient subtype. | ConferenceRoomMailbox / EquipmentMailbox / LegacyMailbox / LinkedMailbox / UserMailbox / MailContact / DynamicDistributionGroup / MailForestContact / MailNonUniversalGroup / MailUniversalDistributionGroup / MailUniversalSecurityGroup / MailUser / PublicFolder / SharedMailbox |
-| _RejectMessagesFrom_ | _unauthOrig_ | _Extended attribute_ | _Extended attribute_ |
-| _RejectMessagesFromDLMembers_ | _dLMemRejectPerms_ | _Extended attribute_ | _Extended attribute_ |
-| _ReportToManagerEnabled_ | _reportToOwner_ | _Extended attribute_ | _Extended attribute_ |
-| _ReportToOriginatorEnabled_ | _reportToOriginator_ | _Extended attribute_ | _Extended attribute_ |
-| _RequireAllSendersAreAuthenticated_ | _msExchRequireAuthToSendTo_ | _Extended attribute_ | _Extended attribute_ |
-| _ResourceCapacity_ | _msExchResourceCapacity_ | _Extended attribute_ | _Extended attribute_ |
-| _ResourceCustom_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _ResourceMetaData_ | _msExchResourceMetaData_ | _Extended attribute_ | _Extended attribute_ |
-| _ResourcePropertiesDisplay_ | _msExchResourceDisplay_ | _Extended attribute_ | _Extended attribute_ |
-| _ResourceSearchProperties_ | _msExchResourceSearchProperties_ | _Extended attribute_ | _Extended attribute_ |
-| _ResourceType_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _RetainDeletedItemsFor_ | _garbageCollPeriod_ | _Extended attribute_ | _Extended attribute_ |
-| _RTCSIPPrimaryUserAddress_ | _msRTCSIP-PrimaryUserAddress_ | _Extended attribute_ | _Extended attribute_ |
-| _RulesQuota_ | _msExchMDBRulesQuota_ | _Extended attribute_ | _Extended attribute_ |
-| _SafeRecipientsHash_ | _msExchSafeRecipientsHash_ | _Extended attribute_ | _Extended attribute_ |
-| _SafeSendersHash_ | _msExchSafeSendersHash_ | _Extended attribute_ | _Extended attribute_ |
-| _SamAccountName_ | _SamAccountName_ | This property contains the logon name that is used to support client computers and servers running older versions of the operating system, such as Microsoft Windows NT 4.0, Windows 98, Windows 95, and LAN Manager. | String / Wildcard character accepted |
-| _SCLDeleteThresholdInt_ | _msExchMessageHygieneSCLDeleteThreshold_ | _Extended attribute_ | _Extended attribute_ |
-| _SCLJunkThresholdInt_ | _msExchMessageHygieneSCLJunkThreshold_ | _Extended attribute_ | _Extended attribute_ |
-| _SCLQuarantineThresholdInt_ | _msExchMessageHygieneSCLQuarantineThreshold_ | _Extended attribute_ | _Extended attribute_ |
-| _SCLRejectThresholdInt_ | _msExchMessageHygieneSCLRejectThreshold_ | _Extended attribute_ | _Extended attribute_ |
-| _SecurityProtocol_ | _securityProtocol_ | _Extended attribute_ | _Extended attribute_ |
-| _SendDeliveryReportsTo_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _SendOofMessageToOriginatorEnabled_ | _oOFReplyToOriginator_ | _Extended attribute_ | _Extended attribute_ |
-| _ServerLegacyDN_ | _msExchHomeServerName_ | _Extended attribute_ | _Extended attribute_ |
-| _ServerName_ | Not applicable | This property contains the name of the server where the recipient resides. | Server name |
-| _Sid_ | _objectSid_ | _Extended attribute_ | _Extended attribute_ |
-| _SidHistory_ | _sIDHistory_ | _Extended attribute_ | _Extended attribute_ |
-| _SimpleDisplayName_ | _displayNamePrintable_ | _Extended attribute_ | _Extended attribute_ |
-| _SMimeCertificate_ | _userSMIMECertificate_ | _Extended attribute_ | _Extended attribute_ |
-| _StateOrProvince_ | _st_ | This property contains the state or province information that is defined for this recipient. | String / Wildcard character accepted |
-| _StreetAddress_ | _streetAddress_ | This property contains the street address that is defined for this recipient. | String |
-| _TelephoneAssistant_ | _telephoneAssistant_ | _Extended attribute_ | _Extended attribute_ |
-| _TextEncodedORAddress_ | _textEncodedORAddress_ | _Extended attribute_ | _Extended attribute_ |
-| _Title_ | _title_ | This property contains the title of the recipient. | String |
-| _UMDtmfMap_ | _msExchUMDtmfMap_ | _Extended attribute_ | _Extended attribute_ |
-| _UMEnabled_ | Not applicable | This property specifies whether Unified Messaging (UM) is enabled for this mailbox. | Boolean / $true or $false |
-| _UMEnabledFlags_ | _msExchUMEnabledFlags_ | _Extended attribute_ | _Extended attribute_ |
-| _UMMailboxPolicy_ | _msExchUMTemplateLink_ | _Extended attribute_ | _Extended attribute_ |
-| _UMPinChecksum_ | _msExchUMPinChecksum_ | _Extended attribute_ | _Extended attribute_ |
-| _UMRecipientDialPlanId_ | _msExchUMRecipientDialPlanLink_ | _Extended attribute_ | _Extended attribute_ |
-| _UMServerWritableFlags_ | _msExchUMServerWritableFlags_ | _Extended attribute_ | _Extended attribute_ |
-| _UMSpokenName_ | _msExchUMSpokenName_ | _Extended attribute_ | _Extended attribute_ |
-| _UnicodePassword_ | _unicodePwd_ | _Extended attribute_ | _Extended attribute_ |
-| _UseDatabaseQuotaDefaults_ | _mDBUseDefaults_ | This property specifies whether the mailbox uses the quota attributes for the mailbox database in which this mailbox resides. The quota attributes are: ProhibitSendQuota, ProhibitSendReceiveQuota, IssueWarningQuota, and RulesQuota. | ProhibitSendQuota / ProhibitSendReceiveQuota / IssueWarningQuota / RulesQuota |
-| _UserAccountControl_ | _userAccountControl_ | _Extended attribute_ | _Extended attribute_ |
-| _UserPrincipalName_ | _userPrincipalName_ | This property contains the user principal name (UPN) for this recipient. The UPN is the logon name for the user and consists of a user name and a suffix. Typically, the suffix is the domain name where the user account resides. For example, kim@contoso.com. | User logon name / User principal name / Wildcard character accepted |
-| _ViewDepth_ | _Not applicable_ | _Extended attribute_ | _Extended attribute_ |
-| _WebPage_ | _wWWHomePage_ | _Extended attribute_ | _Extended attribute_ |
-
+|Property name|LDAP display name|Value|Comments|
+|---|---|---|---|
+|_AcceptMessagesOnlyFrom_|_authOrig_|Dynamic distribution groups: String (wildcards accepted). <br> Others: Blank or non-blank.||
+|_AcceptMessagesOnlyFromDLMembers_|_dLMemSubmitPerms_|Dynamic distribution groups: String (wildcards accepted). <br> Others: Blank or non-blank.||
+|_ActiveSyncAllowedDeviceIDs_|_msExchMobileAllowedDeviceIds_|String (wildcards accepted).||
+|_ActiveSyncBlockedDeviceIDs_|_msExchMobileBlockedDeviceIds_|String (wildcards accepted).||
+|_ActiveSyncEnabled_|n/a|Boolean (`$true` or `$false`)||
+|_ActiveSyncMailboxPolicy_|_msExchMobileMailboxPolicyLink_|String (wildcards accepted in dynamic distribution groups).|The default Exchange ActiveSync mailbox policy is named Default.|
+|_ActiveSyncSuppressReadReceipt_|n/a|Boolean (`$true` or `$false`)||
+|_AddressBookPolicy_|_msExchAddressBookPolicyLink_|String (wildcards accepted in dynamic distribution groups).||
+|_AddressListMembership_|_showInAddressBook_|String (wildcards accepted in dynamic distribution groups).||
+|_AdminDisplayName_|_adminDisplayName_|String (wildcards accepted).||
+|_AdministrativeUnits_|_msExchAdministrativeUnitLink_|String (wildcards accepted in dynamic distribution groups).||
+|_AggregatedMailboxGuids_|_msExchAlternateMailboxes_|String (wildcards accepted).||
+|_Alias_|_mailNickname_|String (wildcards accepted).|This property contains the recipient's Exchange alias (also known as the mail nickname). This value identifies the recipient as a mail-enabled object, and shouldn't be confused with multiple email addresses for the same recipient (also known as proxy addresses). A recipient can have only one _Alias_ value.|
+|_AllowUMCallsFromNonUsers_|_msExchUMListInDirectorySearch_|`None` (0) or `SearchEnabled` (1)||
+|_ArbitrationMailbox_|_msExchArbitrationMailbox_|String (wildcards accepted in dynamic distribution groups).||
+|_ArchiveDatabase_|_msExchArchiveDatabaseLink_|String||
+|_ArchiveDomain_|_msExchArchiveAddress_|String (wildcards accepted).||
+|_ArchiveGuid_|_msExchArchiveGUID_|String (wildcards accepted).||
+|_ArchiveName_|_msExchArchiveName_|String (wildcards accepted).||
+|_ArchiveQuota_|_msExchArchiveQuota_|Dynamic distribution groups: A byte quantified size value (for example, `300MB` or `1.5GB`). Unqualified values are treated as bytes. <br> Others: Blank or non-blank.||
+|_ArchiveWarningQuota_|_msExchArchiveWarnQuota_|Dynamic distribution groups: A byte quantified size value (for example, `300MB` or `1.5GB`). Unqualified values are treated as bytes. <br> Others: Blank or non-blank.||
+|_ArchiveRelease_|_msExchArchiveRelease_|String (wildcards accepted).||
+|_ArchiveState_|n/a|`None` (0), `Local` (1), `HostedProvisioned` (2), `HostedPending` (3), or `OnPremise` (4).||
+|_ArchiveStatus_|_msExchArchiveStatus_|`None` (0) or `Active` (1).||
+|_AssistantName_|_msExchAssistantName_|String (wildcards accepted).|The name of the recipient's assistant.|
+|_AuditEnabled_|_msExchMailboxAuditEnable_|Boolean (`$true` or `$false`)||
+|_AuditLogAgeLimit_|_msExchMailboxAuditLogAgeLimit_|Dynamic distribution groups: String (wildcards accepted). <br> Others: Blank or non-blank.|The value of this property is a time span: `dd.hh:mm:ss` where `dd` = days, `hh` = hours, `mm` = minutes, and `ss` = seconds.|
+|_AuthenticationPolicy_|_msExchAuthPolicyLink_|String (wildcards accepted in dynamic distribution groups).||
+|_C_|_C_|String (wildcards accepted).|This property contains the two-letter country/region designation from International Organization for Standardization (ISO) 3166. For more information, see [Country Codes - ISO 3166](https://www.iso.org/iso-3166-country-codes.html).|
+|_CalendarLoggingQuota_|_msExchCalendarLoggingQuota_|Dynamic distribution groups: `Unlimited` or a byte quantified size value (for example, `300MB` or `1.5GB`). Unqualified values are treated as bytes. <br> Others: `Unlimited`, or blank/non-blank.||
+|_CalendarRepairDisabled_|_msExchCalendarRepairDisabled_|Boolean (`$true` or `$false`)||
+|_Certificate_|_userCertificate_|`System.Byte[]`|This property contains the DER-encoded X509v3 certificates that are issued to the user.|
+|_CertificateSubject_|n/a|`X509:<I>X500Issuer<S>X500Subject` (for example, `X509:<I>C=US,O=InternetCA,CN=APublicCertificateAuthority<S>C=US,O=Fabrikam,OU=Sales,CN=Jeff Smith`)|The X509 certificate that's published for the user account (visible on the **Published Certificates** tab in Active Directory Users and Computers).|
+|_City_|_l_|String (wildcards accepted).|The recipient's city.|
+|_Co_|_Co_|String (wildcards accepted).|The name of the recipient's country or region. You can locate valid _Co_ values on the **Address** tab in the recipient's properties in Active Directory Users and Computers.|
+|_CommonName_|_cn_|String (wildcards accepted).||
+|_ComplianceTagHoldApplied_|n/a|Boolean (`$true` or `$false`)||
+|_Company_|_company_|String (wildcards accepted).|The recipient's company name.|
+|_CountryOrRegion_|c|String (wildcards accepted).|This property contains the two-letter country/region designation from ISO 3166. For more information, see [Country Codes - ISO 3166](https://www.iso.org/iso-3166-country-codes.html).|
+|_CustomAttribute1_ to _CustomAttribute15_|_extensionAttribute1_ to _extensionAttribute15_|String (wildcards accepted).|These properties contain custom attributes that you can add to a recipient.|
+|_Database_|_homeMDB_|String (wildcards accepted).|The identity of the user's mailbox database.|
+|_Department_|_department_|String (wildcards accepted).|The recipient's department.|
+|_DataEncryptionPolicy_|_msExchDataEncryptionPolicyLink_|String (wildcards accepted in dynamic distribution groups).||
+|_DefaultPublicFolderMailbox_|_msExchPublicFolderMailbox_|String (wildcards accepted in dynamic distribution groups).||
+|_DeletedItemFlags_|_deletedItemFlags_|`DatabaseDefault` (0), `RetainUntilBackupOrCustomPeriod` (3), or `RetainForCustomPeriod` (5).||
+|_DeliverToMailboxAndForward_|_deliverAndRedirect_|Boolean (`$true` or `$false`)||
+|_Description_|_description_|String (wildcards accepted).||
+|_DirectReports_|_directReports_|String (wildcards accepted in dynamic distribution groups).||
+|_DisabledArchiveDatabase_|_msExchDisabledArchiveDatabaseLink_|String (wildcards accepted).||
+|_DisabledArchiveGuid_|_msExchDisabledArchiveDatabaseGUID_|String (wildcards accepted).||
+|_DisplayName_|_displayName_|String (wildcards accepted).||
+|_DistinguishedName_|_distinguishedName_|String (wildcards accepted).||
+|_EcpEnabled_|n/a|Boolean (`$true` or `$false`)||
+|_ElcExpirationSuspensionEndDate_|_msExchELCExpirySuspensionEnd_|Dynamic distribution groups: A date/time value using the time zone and regional settings of the Exchange server. <br> Others: Blank or non-blank.|This property contains a date-time value.|
+|_ElcExpirationSuspensionStartDate_|_msExchELCExpirySuspensionStart_|Dynamic distribution groups: A date/time value using the time zone and regional settings of the Exchange server. <br> Others: Blank or non-blank.|This property contains a date-time value.|
+|_ElcMailboxFlags_|_msExchELCMailboxFlags_|`None` (0), `ExpirationSuspended` (1), `ElcV2` (2), `DisableCalendarLogging` (4),`LitigationHold` (8), `SingleItemRecovery` (16), `ValidArchiveDatabase` (32), `ShouldUseDefaultRetentionPolicy` (128), `EnableSiteMailboxMessageDedup` (256), `ElcProcessingDisabled` (512), or `ComplianceTagHold` (1024).||
+|_EmailAddresses_|_proxyAddresses_|String (wildcards accepted).|This property contains the recipient's email addresses (the primary email address and all proxy addresses). This is the property used to identify inactive mailboxes.|
+|_EmailAddressPolicyEnabled_|n/a|Boolean (`$true` or `$false`)||
+|_EntryId_|_msExchPublicFolderEntryId_|String (wildcards accepted).||
+|_EwsApplicationAccessPolicy_|_msExchEwsApplicationAccessPolicy_|`EnforceAllowList` or `EnforceBlockList`.||
+|_EwsEnabled_|_msExchEwsEnabled_|Integer||
+|_ExchangeGuid_|_msExchMailboxGuid_|String (wildcards accepted).||
+|_ExchangeUserAccountControl_|_msExchUserAccountControl_|For valid values, see [ADS_USER_FLAG_ENUM enumeration](/windows/win32/api/iads/ne-iads-ads_user_flag_enum). The integer values will work as described. Most of the text values won't work as described (even if you remove `ADS_UF` and all underscores).||
+|_ExchangeVersion_|_msExchVersion_|Dynamic distribution groups: String (wildcards accepted). <br> Others: `ExchangeObjectVersion` values.||
+|_ExpansionServer_|_msExchExpansionServerName_|String (wildcards accepted).||
+|_ExtensionCustomAttribute1_ to _ExtensionCustomAttribute5_|_msExchExtensionCustomAttribute1_ to _msExchExtensionCustomAttribute5_|String (wildcards accepted).||
+|_ExternalDirectoryObjectId_|_msExchExternalDirectoryObjectId_|String (wildcards accepted).||
+|_ExternalEmailAddress_|_targetAddress_|String (wildcards accepted).|This property contains the external email address for mail contacts and mail users.|
+|_ExternalOofOptions_|_msExchExternalOOFOptions_|`External` (0) or `InternalOnly` (1).||
+|_Fax_|_facsimileTelephoneNumber_|String (wildcards accepted).||
+|_FirstName_|_givenName_|String (wildcards accepted).|The recipient's first name.|
+|_ForwardingAddress_|_altRecipient_|String (wildcards accepted).||
+|_ForwardingSmtpAddress_|_msExchGenericForwardingAddress_|String (wildcards accepted).||
+|_GeneratedOfflineAddressBooks_|_msExchOABGeneratingMailboxBL_|String (wildcards accepted in dynamic distribution groups).||
+|_GrantSendOnBehalfTo_|_publicDelegates_|String (wildcards accepted in dynamic distribution groups).||
+|_GroupType_|_groupType_|`None` (0), `Global` (2), `DomainLocal` (4), `BuiltinLocal` (5), `Universal` (8), or `SecurityEnabled` (-2147483648).||
+|_Guid_|_objectGuid_|String (wildcards accepted).||
+|_HasActiveSyncDevicePartnership_|n/a|Boolean (`$true` or `$false`)||
+|_HiddenFromAddressListsEnabled_|_msExchHideFromAddressLists_|Boolean (`$true` or `$false`)|This property specifies whether the recipient is visible in the global address list or other address lists.|
+|_HiddenGroupMembershipEnabled_|_hideDLMembership_|Boolean (`$true` or `$false`)||
+|_HomeMTA_|_homeMTA_|String (wildcards accepted in dynamic distribution groups).||
+|_HomePhone_|_homePhone_|String (wildcards accepted).||
+|_Id_|_distinguishedName_|String (wildcards accepted in dynamic distribution groups).||
+|_ImapEnabled_|n/a|Boolean (`$true` or `$false`)||
+|_ImmutableId_|_msExchGenericImmutableId_|String (wildcards accepted).||
+|_IncludedRecipients_|n/a|`None` (0), `MailboxUsers` (1), `Resources` (2), `MailContacts` (4), `MailGroups` (8), `MailUsers` (16), or `AllRecipients` (-1).||
+|_IncludeInGarbageCollection_|n/a|Boolean (`$true` or `$false`)||
+|_Initials_|_initials_|String (wildcards accepted).||
+|_InPlaceHolds_|_msExchUserHoldPolicies_|String||
+|_InPlaceHoldsRaw_|n/a|String||
+|_InternetEncoding_|_internetEncoding_|Integer|For valid values, see the Remarks section in the article, [Encoding Class](/dotnet/api/system.text.encoding).|
+|_IsDirSynced_|_msExchIsMSODirsynced_|Boolean (`$true` or `$false`)||
+|_IsExcludedFromServingHierarchy_|n/a|Boolean (`$true` or `$false`)||
+|_IsHierarchyReady_|n/a|Boolean (`$true` or `$false`)||
+|_IsHierarchySyncEnabled_|n/a|Boolean (`$true` or `$false`)||
+|_IsInactiveMailbox_|n/a|Boolean (`$true` or `$false`)||
+|_IsMailboxEnabled_|n/a|Boolean (`$true` or `$false`)|This property specifies whether the user is mailbox-enabled.|
+|_IsSecurityPrincipal_|n/a|Boolean (`$true` or `$false`)||
+|_IsSoftDeletedByDisable_|n/a|Boolean (`$true` or `$false`)||
+|_IsSoftDeletedByRemove_|n/a|Boolean (`$true` or `$false`)||
+|_IssueWarningQuota_|_mDBStorageQuota_|Dynamic distribution groups: A byte quantified size value (for example, `300MB` or `1.5GB`). Unqualified values are treated as bytes. <br> Others: Blank or non-blank.||
+|_JournalArchiveAddress_|n/a|An SMTP email address (for example, `julia@contoso.com`).||
+|_LanguagesRaw_|_msExchUserCulture_|String (wildcards accepted).|This property contains the language preference for this mailbox in the format `<ISO 639 two-letter culture code>-<ISO 3166 two-letter subculture code>`. For example, United States English is `en-US`. For more information, see [CultureInfo Class](/dotnet/api/system.globalization.cultureinfo).|
+|_LastExchangeChangedTime_|_msExchLastExchangeChangedTime_|Dynamic distribution groups: A date/time value using the time zone and regional settings of the Exchange server. <br> Others: Blank or non-blank.||
+|_LastName_|_sn_|String (wildcards accepted).||
+|_LdapRecipientFilter_|_msExchDynamicDLFilter_|String (wildcards accepted).||
+|_LegacyExchangeDN_|_legacyExchangeDN_|String (wildcards accepted).||
+|_LitigationHoldDate_|_msExchLitigationHoldDate_|Dynamic distribution groups: A date/time value using the time zone and regional settings of the Exchange server. <br> Others: Blank or non-blank.||
+|_LitigationHoldEnabled_|n/a|Boolean (`$true` or `$false`)||
+|_LitigationHoldOwner_|_msExchLitigationHoldOwner_|String (wildcards accepted).||
+|_LocaleID_|_localeID_|Integer|For valid values, [Microsoft Locale ID Values](/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a).|
+|_MailboxMoveBatchName_|_msExchMailboxMoveBatchName_|String (wildcards accepted).||
+|_MailboxMoveFlags_|_msExchMailboxMoveFlags_|For valid values, see the description of the _Flags_ parameter in [Get-MoveRequest](/powershell/module/exchange/get-moverequest).||
+|_MailboxMoveRemoteHostName_|_msExchMailboxMoveRemoteHostName_|String (wildcards accepted).||
+|_MailboxMoveSourceMDB_|_msExchMailboxMoveSourceMDBLink_|String (wildcards accepted in dynamic distribution groups).||
+|_MailboxMoveStatus_|_msExchMailboxMoveStatus_|For valid values, see the description of the _MoveStatus_ parameter in [Get-MoveRequest](/powershell/module/exchange/get-moverequest).||
+|_MailboxMoveTargetMDB_|_msExchMailboxMoveTargetMDBLink_|String (wildcards accepted in dynamic distribution groups).||
+|_MailboxPlan_|_msExchParentPlanLink_|String (wildcards accepted).|Mailbox plans correspond to Microsoft 365 license types. The availability of a license plans is determined by the selections that you make when you enroll your domain.|
+|_MailboxRelease_|_msExchMailboxRelease_|String (wildcards accepted).||
+|_MailTipTranslations_|_msExchSenderHintTranslations_|String (wildcards accepted).||
+|_ManagedBy_|_managedBy_|String (wildcards accepted in dynamic distribution groups).|This property identifies the security principal that's the manager of the group.|
+|_Manager_|_manager_|String (wildcards accepted in dynamic distribution groups).|The recipient's manager.|
+|_MAPIEnabled_|n/a|Boolean (`$true` or `$false`)||
+|_MapiRecipient_|_mAPIRecipient_|Boolean (`$true` or `$false`)||
+|_MaxBlockedSenders_|_msExchMaxBlockedSenders_|`Unlimited` or an integer.||
+|_MaxSafeSenders_|_msExchMaxSafeSenders_|`Unlimited` or an integer.||
+|_MaxReceiveSize_|_delivContLength_|Dynamic distribution groups: A byte quantified size value (for example, `50MB`). Unqualified values are treated as bytes. <br> Others: Blank or non-blank.||
+|_MaxSendSize_|_submissionContLength_|Dynamic distribution groups: A byte quantified size value (for example, `50MB`). Unqualified values are treated as bytes. <br> Others: Blank or non-blank.||
+|_MemberDepartRestriction_|_msExchGroupDepartRestriction_|`Closed` (0), `Open` (1), or `ApprovalRequired` (2).||
+|_MemberJoinRestriction_|_msExchGroupDepartRestriction_|`Closed` (0), `Open` (1), or `ApprovalRequired` (2).||
+|_MemberOfGroup_|_memberOf_|String (wildcards accepted in dynamic distribution groups).|You must use the DistinguishedName. This property only works with groups recognized by Exchange, therefore Azure AD security groups do not work.|
+|_Members_|_member_|String (wildcards accepted in dynamic distribution groups).||
+|_MessageHygieneFlags_|_msExchMessageHygieneFlags_|`None` (0) or `AntispamBypass` (1).||
+|_MobileAdminExtendedSettings_|_msExchOmaAdminExtendedSettings_|String (wildcards accepted).||
+|_MobileMailboxFlags_|_msExchMobileMailboxFlags_|`None` (0), `HasDevicePartnership` (1), or ActiveSyncSuppressReadReceipt (2).||
+|_MobileFeaturesEnabled_|_msExchOmaAdminWirelessEnable_|`None` (0), `AirSyncDisabled` (4), or `MowaDisabled` (8).||
+|_MobilePhone_|_mobile_|String (wildcards accepted).||
+|_ModeratedBy_|_msExchModeratedByLink_|String (wildcards accepted in dynamic distribution groups).||
+|_ModerationEnabled_|_msExchEnableModeration_|Boolean (`$true` or `$false`)||
+|_Name_|_name_|String (wildcards accepted).|The unique name value of the recipient.|
+|_NetID_|n/a|A sample value is `1003BFFD9A0CFA03`.|This property is populated for Exchange Online mailboxes in hybrid environments.|
+|_Notes_|_info_|String (wildcards accepted).||
+|_ObjectCategory_|_objectCategory_|Dynamic distribution groups: String (wildcards accepted). <br> Others: Valid Active Directory `ObjectCategory` values.|Valid values use the format `CN=<Type>,CN=Schema,CN=Configuration,DC=<domain>`, where _\<Type\>_ is typically `Person` or `Group` for recipients. For example, `CN=Person,CN=Schema,CN=Configuration,DC=contoso,DC=com`.|
+|_ObjectClass_|_objectClass_|Dynamic distribution groups: String (wildcards accepted). <br> Others: Valid Active Directory `ObjectCategory` values.|Common values for recipients are: `contact`, `organizationalPerson`, `person`, `top`, `group`, `msExchDynamicDistributionList`, and `user`.|
+|_Office_|_physicalDeliveryOfficeName_|String (wildcards accepted).||
+|_OfflineAddressBook_|_msExchUseOAB_|String (wildcards accepted in dynamic distribution groups).|This property contains the offline address book (OAB) that's associated with this recipient.|
+|_OperatorNumber_|_msExchUMOperatorNumber_|String (wildcards accepted).||
+|_OtherFax_|_otherFacsimileTelephoneNumber_|String (wildcards accepted).||
+|_OtherHomePhone_|_otherHomePhone_|String (wildcards accepted).||
+|_OtherTelephone_|_otherTelephone_|String (wildcards accepted).||
+|_OWAEnabled_|n/a|Boolean (`$true` or `$false`)||
+|_OWAforDevicesEnabled_|_msExchOmaAdminWirelessEnable_|Boolean (`$true` or `$false`)||
+|_OWAMailboxPolicy_|_msExchOWAPolicy_|String (wildcards accepted in dynamic distribution groups).||
+|_Pager_|_pager_|String (wildcards accepted).||
+|_Phone_|_telephoneNumber_|String (wildcards accepted).||
+|_PhoneProviderId_|_msExchUMPhoneProvider_|String (wildcards accepted).||
+|_PhoneticCompany_|_msDS-PhoneticCompanyName_|String (wildcards accepted).||
+|_PhoneticDepartment_|_msDS-PhoneticDepartment_|String (wildcards accepted).||
+|_PhoneticDisplayName_|_msDS-PhoneticDisplayName_|String (wildcards accepted).||
+|_PhoneticFirstName_|_msDS-PhoneticFirstName_|String (wildcards accepted).||
+|_PhoneticLastName_|_msDS-PhoneticLastName_|String (wildcards accepted).||
+|_PoliciesExcluded_|_msExchPoliciesExcluded_|String (wildcards accepted).||
+|_PoliciesIncluded_|_msExchPoliciesIncluded_|String (wildcards accepted).||
+|_PopEnabled_|n/a|Boolean (`$true` or `$false`)||
+|_PostalCode_|_postalCode_|String (wildcards accepted).||
+|_PostOfficeBox_|_postOfficeBox_|String (wildcards accepted).||
+|_PreviousRecipientTypeDetails_|_msExchPreviousRecipientTypeDetails_|For valid values, see the description of the _RecipientTypeDetails_ parameter in [Get-Recipient](/powershell/module/exchange/get-recipient).||
+|_PrimaryGroupId_|_primaryGroupId_|Integer|For domain users, the value of this property is typically 513, which corresponds to the Domain Users group.|
+|_PrimarySmtpAddress_|n/a|String (wildcards accepted).|Don't use the _PrimarySmtpAddress_ property; use the _EmailAddresses_ property instead. Any filter that uses the _PrimarySmtpAddress_ property will also search values in the _EmailAddresses_ property. For example, if a mailbox has the primary email address dario@contoso.com, and the additional proxy addresses dario2@contoso.com and dario3@contoso.com, all of the following filters will return that mailbox in the result: `"PrimarySmtpAddress -eq 'dario@contoso.com'"`, `"PrimarySmtpAddress -eq 'dario2@contoso.com'"`, or `"PrimarySmtpAddress -eq 'dario3@contoso.com'"`.|
+|_ProhibitSendQuota_|_mDBOverQuotaLimit_|Dynamic distribution groups: A byte quantified size value (for example, `50MB` or `1.5GB`). Unqualified values are treated as bytes. <br> Others: Blank or non-blank.||
+|_ProhibitSendReceiveQuota_|_mDBOverHardQuotaLimit_|Dynamic distribution groups: A byte quantified size value (for example, `50MB` or `1.5GB`). Unqualified values are treated as bytes. <br> Others: Blank or non-blank.||
+|_ProtocolSettings_|_protocolSettings_|String (wildcards accepted).||
+|_PublicFolderContacts_|_pFContacts_|String (wildcards accepted in dynamic distribution groups).||
+|_PurportedSearchUI_|_msExchPurportedSearchUI_|String (wildcards accepted).||
+|_QueryBaseDN_|_msExchQueryBaseDN_|String (wildcards accepted in dynamic distribution groups).||
+|_RawCanonicalName_|_canonicalName_|String (wildcards accepted).|This property is based on a constructed Active Directory attribute, and does not correctly resolve all members when used in `Get-Recipient -RecipientPreviewFilter`.|
+|_RawExternalEmailAddress_|_targetAddress_|String (wildcards accepted).||
+|_RawName_|_name_|String (wildcards accepted).||
+|_RecipientContainer_|_msExchDynamicDLBaseDN_|String (wildcards accepted).|The Active Directory container or organizational unit (OU) that holds the recipient object.|
+|_RecipientDisplayType_|_msExchRecipientDisplayType_|`MailboxUser` (0), `DistributionGroup` (1), `PublicFolder` (2), `DynamicDistributionGroup` (3), `Organization` (4), `PrivateDistributionList` (5), `RemoteMailUser` (6). `ConferenceRoomMailbox` (7), or `EquipmentMailbox` (8).||
+|_RecipientFilter_|_msExchQueryFilter_|String (wildcards accepted).||
+|_RecipientLimits_|_msExchRecipLimit_|`Unlimited` or an integer.|This property specifies the maximum number of recipients that are allowed in messages sent by the mailbox.|
+|_RecipientType_|n/a|For valid values, see the description of the _RecipientType_ parameter in [Get-Recipient](/powershell/module/exchange/get-recipient).||
+|_RecipientTypeDetails_|n/a|For valid values, see the description of the _RecipientTypeDetails_ parameter in [Get-Recipient](/powershell/module/exchange/get-recipient).||
+|_RecoverableItemsQuota_|_msExchDumpsterQuota_|Dynamic distribution groups: A byte quantified size value (for example, `50MB` or `1.5GB`). Unqualified values are treated as bytes. <br> Others: Blank or non-blank.||
+|_RecoverableItemsWarningQuota_|_msExchDumpsterWarningQuota_|Dynamic distribution groups: A byte quantified size value (for example, `50MB` or `1.5GB`). Unqualified values are treated as bytes. <br> Others: Blank or non-blank.||
+|_RejectMessagesFrom_|_unauthOrig_|Dynamic distribution groups: String (wildcards accepted). <br> Others: Blank or non-blank.||
+|_RejectMessagesFromDLMembers_|_dLMemRejectPerms_|Dynamic distribution groups: String (wildcards accepted). <br> Others: Blank or non-blank.||
+|_RemoteAccountPolicy_|_msExchSyncAccountsPolicyDN_|String (wildcards accepted in dynamic distribution groups).||
+|_RemotePowerShellEnabled_|n/a|Boolean (`$true` or `$false`)||
+|_RemoteRecipientType_|_msExchRemoteRecipientType_|`None` (0), `ProvisionMailbox` (1), `ProvisionArchive` (2), `Migrated` (4), `DeprovisionMailbox` (8), `DeprovisionArchive` (16), `RoomMailbox` (32), `EquipmentMailbox` (64), `SharedMailbox` (96), or `TeamMailbox` (128).||
+|_ReportToManagerEnabled_|_reportToOwner_|Boolean (`$true` or `$false`)||
+|_ReportToOriginatorEnabled_|_reportToOriginator_|Boolean (`$true` or `$false`)||
+|_RequireAllSendersAreAuthenticated_|_msExchRequireAuthToSendTo_|Boolean (`$true` or `$false`)||
+|_ResourceCapacity_|_msExchResourceCapacity_|Integers.||
+|_ResourceCustom_|n/a|String||
+|_ResourceMetaData_|_msExchResourceMetaData_|String (wildcards accepted).||
+|_ResourcePropertiesDisplay_|_msExchResourceDisplay_|String (wildcards accepted).||
+|_ResourceSearchProperties_|_msExchResourceSearchProperties_|String (wildcards accepted).||
+|_ResourceType_|n/a|`Room` (0) or `Equipment` (1).||
+|_RetainDeletedItemsFor_|_garbageCollPeriod_|Dynamic distribution groups: A time span: `dd.hh:mm:ss` where `dd` = days, `hh` = hours, `mm` = minutes, and `ss` = seconds. <br> Others: Blank or non-blank.||
+|_RetentionComment_|_msExchRetentionComment_|String (wildcards accepted).||
+|_RetentionPolicy_|n/a|String||
+|_RetentionUrl_|_msExchRetentionURL_|String (wildcards accepted).||
+|_RoleAssignmentPolicy_|_msExchRBACPolicyLink_|String (wildcards accepted in dynamic distribution groups).||
+|_RulesQuota_|_msExchMDBRulesQuota_|Dynamic distribution groups: A byte quantified size value (for example, `50MB` or `1.5GB`). Unqualified values are treated as bytes. <br> Others: Blank or non-blank.||
+|_SamAccountName_|_SamAccountName_|String (wildcards accepted in dynamic distribution groups).|This property specifies an identifier that's compatible with older versions of Microsoft Windows client and server operating systems (also known as the pre-Windows 2000 user account or group name)|
+|_SafeRecipientsHash_|_msExchSafeRecipientsHash_|`System.Byte[]`|A user's safe recipients list is hashed (SHA-256) one way before it's stored as a binary large object in Active Directory.|
+|_SafeSendersHash_|_msExchSafeSendersHash_|`System.Byte[]`|A user's safe senders list is hashed (SHA-256) one way before it's stored as a binary large object in Active Directory.|
+|_SCLDeleteThresholdInt_|_msExchMessageHygieneSCLDeleteThreshold_|An integer from 0 through 9.||
+|_SCLJunkThresholdInt_|_msExchMessageHygieneSCLJunkThreshold_|An integer from 0 through 9.||
+|_SCLQuarantineThresholdInt_|_msExchMessageHygieneSCLQuarantineThreshold_|An integer from 0 through 9.||
+|_SCLRejectThresholdInt_|_msExchMessageHygieneSCLRejectThreshold_|An integer from 0 through 9.||
+|_SecurityProtocol_|_securityProtocol_|`System.Byte[]`||
+|_SendDeliveryReportsTo_|n/a|`None` (0), `Manager` (1) or `Originator` (2).||
+|_SendOofMessageToOriginatorEnabled_|_oOFReplyToOriginator_|Boolean (`$true` or `$false`)||
+|_ServerLegacyDN_|_msExchHomeServerName_|String (wildcards accepted).||
+|_ServerName_|n/a|String||
+|_SharingPolicy_|_msExchSharingPolicyLink_|String (wildcards accepted in dynamic distribution groups).||
+|_SimpleDisplayName_|_displayNamePrintable_|String (wildcards accepted).||
+|_SingleItemrecoveryEnabled_|n/a|Boolean (`$true` or `$false`)||
+|_SKUAssigned_|n/a|Boolean (`$true` or `$false`)||
+|_SMimeCertificate_|_userSMIMECertificate_|`System.Byte[]`|This property contains the binary encoded S/MIME certificates that are issued to the user.|
+|_StateOrProvince_|_st_|String (wildcards accepted).||
+|_StreetAddress_|_streetAddress_|String (wildcards accepted).||
+|_StsRefreshTokensValidFrom_|_msExchStsRefreshTokensValidFrom_|Dynamic distribution groups: A date/time value using the time zone and regional settings of the Exchange server. <br> Others: Blank or non-blank.||
+|_TelephoneAssistant_|_telephoneAssistant_|String (wildcards accepted).||
+|_TextEncodedORAddress_|_textEncodedORAddress_|String (wildcards accepted).||
+|_ThrottlingPolicy_|_msExchThrottlingPolicyDN_|String (wildcards accepted in dynamic distribution groups).||
+|_Title_|_title_|String (wildcards accepted).||
+|_UMAddresses_|_msExchUMAddresses_|String (wildcards accepted).||
+|_UMCallingLineIds_|_msExchUMCallingLineIds_|String (wildcards accepted).||
+|_UMDtmfMap_|_msExchUMDtmfMap_|String (wildcards accepted).||
+|_UMEnabled_|n/a|Boolean (`$true` or `$false`)|This property specifies whether Unified Messaging (UM) is enabled for this mailbox.|
+|_UMEnabledFlags_|_msExchUMEnabledFlags_|`None` (0), `UMEnabled` (1), `FaxEnabled` (2), `TUIAccessToCalendarEnabled` (4), `TUIAccessToEmailEnabled` (8), `SubscriberAccessEnabled` (16), `TUIAccessToAddressBookEnabled` (32), `AnonymousCallersCanLeaveMessages` (256), `ASREnabled` (512), or `VoiceMailAnalysisEnabled` (1024).||
+|_UMMailboxPolicy_|_msExchUMTemplateLink_|String (wildcards accepted in dynamic distribution groups).||
+|_UMPinChecksum_|_msExchUMPinChecksum_|`System.Byte[]`||
+|_UMRecipientDialPlanId_|_msExchUMRecipientDialPlanLink_|String (wildcards accepted in dynamic distribution groups).||
+|_UMServerWritableFlags_|_msExchUMServerWritableFlags_|`None` (0), `MissedCallNotificationEnabled` (1), `SMSVoiceMailNotificationEnabled` (2), `SMSMissedCallNotificationEnabled` (4), or `PinlessAccessToVoiceMailEnabled` (8).||
+|_UMSpokenName_|_msExchUMSpokenName_|`System.Byte[]`||
+|_UnicodePassword_|_unicodePwd_|`System.Byte[]`||
+|_UsageLocation_|_msExchUsageLocation_|A valid ISO 3166-1 two-letter country code value or the corresponding display name (for example, `US` or `UnitedStates`). For more information, see [Country Codes - ISO 3166](https://www.iso.org/iso-3166-country-codes.html).||
+|_UseDatabaseQuotaDefaults_|_mDBUseDefaults_|Boolean (`$true` or `$false`)|If the value of this property is $true, the values of these properties are ignored for the mailbox: _IssueWarningQuota_, _ProhibitSendQuota_, _ProhibitSendReceiveQuota_, , _CalendarLoggingQuota_, _RecoverableItemsWarningQuota_, and _RecoverableItemsQuota_.|
+|_UserAccountControl_|_userAccountControl_|For valid values, see the Remarks section in [User-Account-Control attribute](/windows/win32/adschema/a-useraccountcontrol). You need to convert the hexadecimal values to decimal. Most of the text values won't work as described (even if you remove `ADS_UF` and all underscores).||
+|_UserPrincipalName_|_userPrincipalName_|String (wildcards accepted).|This property contains the user principal name (UPN) for this recipient (for example, `kim@contoso.com`). This property is not supported to identify inactive mailboxes.|
+|_VoiceMailSettings_|_msExchUCVoiceMailSettings_|String (wildcards accepted).|Valid values for this property are: `ExchangeHostedVoiceMail=0`, `ExchangeHostedVoiceMail=1`, `CsHostedVoiceMail=0`, or `CsHostedVoiceMail=1`.|
+|_WebPage_|_wWWHomePage_|String (wildcards accepted).||
+|_WhenChanged_|_whenChanged_|Dynamic distribution groups: A date/time value using the time zone and regional settings of the Exchange server. <br> Others: Blank or non-blank.||
+|_WhenChangedUTC_|n/a|Dynamic distribution groups: A date/time value in Coordinated Universal Time (UTC). <br> Others: Blank or non-blank.||
+|_WhenCreated_|_whenCreated_|Dynamic distribution groups: A date/time value using the time zone and regional settings of the Exchange server. <br> Others: Blank or non-blank.||
+|_WhenCreatedUTC_|n/a|Dynamic distribution groups: A date/time value in UTC. <br> Others: Blank or non-blank.||
+|_WhenMailboxCreated_|_msExchWhenMailboxCreated_|Dynamic distribution groups: A date/time value using the time zone and regional settings of the Exchange server. <br> Others: Blank or non-blank.||
+|_WhenSoftDeleted_|_msExchWhenSoftDeletedTime_|Dynamic distribution groups: A date/time value using the time zone and regional settings of the Exchange server. <br> Others: Blank or non-blank.||
+|_WindowsEmailAddress_|_mail_|String (wildcards accepted).||
+|_WindowsLiveID_|_msExchWindowsLiveID_|String (wildcards accepted).||
